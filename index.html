@@ -1,0 +1,32 @@
+<html>
+<head>
+    <title>metalhead</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<h1>metalhead</h1>
+<img height="200" src="C:\Users\Arthur 2\Pictures\robos\metalhead.png">
+<h2>Um chatbot que auxilia os clientes em suas compras ao tirar dúvidas sobre os produtos do e-commerce</h2>
+<h2>Com ele você pode:</h2>
+<ul>
+    <li><h3>Pedir ajuda para comprar algum produto</h3></li>
+    <li><h3>Perguntar sobre quando o produto será entregue</h3></li>
+    <li><h3>Tirar dúvidas sobre reserva de produtos</h3></li>
+</ul>
+
+<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "31dd7075-bfc5-48e5-89dc-6503dca63f99", // The ID of this integration.
+      region: "us-south", // The region your integration is hosted in.
+      serviceInstanceID: "2d0fb4ff-9f83-49cb-a261-032d772bb0a5", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+
+</script>
+</body>
+</html>
